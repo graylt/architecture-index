@@ -1,0 +1,30 @@
+{
+  "name": "architecture-index",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+  },
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graylt/architecture-index.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graylt/architecture-index/issues"
+  },
+  "homepage": "https://github.com/graylt/architecture-index#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.8.0"
+  }
+}
