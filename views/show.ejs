@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%- include ('./partials/head.ejs') %>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <%- include ('./partials/header.ejs') %>
+      <div>
+        <button class="nav-button"><a class="text" href="/architecture">Back</a></button>
+      </div>
+  </header>
+  <div class="show-container">
+    <div class="tags">
+      <span style='font-size: 48px; padding-right: 16px'><%=architecture.dayTag%></span>
+    <span style='font-size: 48px;'><%=architecture.nightTag%></span>
+    </div>
+    <ul class="show-list">
+      <li>
+      <h1> <%=architecture.title%></h1>
+      <br>
+      <p>Architect</p>
+        <h1><%=architecture.architectOne%></h1>
+      <p>And...</p>
+        <h1><%=architecture.architectTwo%></h1>
+      <p>Year</p>
+        <h1><%=architecture.year%></h1>
+        <p>Location
+          <br>
+          <%=architecture.loc.streetAddress%>
+          <br>
+          <%=architecture.loc.city%>
+          <%=architecture.loc.postalCode%>
+          <br>
+          <%=architecture.loc.country%>
+        </p>
+          <label>Visits:</label>
+          <p><%=architecture.visits%></p>
+          <p><%=architecture.link%></p>
+          <br>
+          <div class="show-edit-container">
+            <button type="button" class="edit-show"><a href="/architecture/<%=architecture._id%>/edit">&#9998;</a></button>
+          </div>
+      </li>
+    </ul>
+    </div>
+    <div class="show-img-container">
+      <span><img class="show-img-large" src=" <%=architecture.img%>"></span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Document</title> -->
+  <%- include ('./partials/head.ejs') %>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <%- include ('./partials/header.ejs') %>
+      <div>
+        <button class="nav-button"><a class="text" href="/architecture">Back</a></button>
+      </div>
+    </header>
+    <div class="edit-container">
+      <ul>
+        <li>
+          <h1>Edit Architecture</h1>
+          <br>
+        <form  action="/architecture/<%=architecture._id%>?_method=PUT" method="POST">
+        <label>Day visit</label><br>
+        <span style='font-size: 48px;'>☀</span><br>
+        <br>
+        <label>Overnight stay</label><br>
+        <span style='font-size: 48px;'>🛏</span><br>
+        <br>
+        <input type="text" class="edit-input" name="dayTag" value="<%=architecture.dayTag%>" placeholder="Paste day visit emoji here">
+        <br>
+        <input type="text" class="edit-input" name="nightTag" value="<%=architecture.nightTag%>" placeholder="Paste overnight stay emoji here">
+        <br>
+        <input type="text" class="edit-input" name="title" value="<%=architecture.title%>" placeholder="Name of building or site">
+        <br>
+        <input type="text" class="edit-input" name="architectOne" value="<%=architecture.architectOne%>" placeholder="Name of Architect">
+        <br>
+        <input type="text" class="edit-input" name="architectTwo" value="<%=architecture.architectTwo%>" placeholder="Add Another Architect">
+        <br>
+        <input type="text" class="edit-input" name="year" value="<%=architecture.year%>" placeholder="Year">
+        <br>
+        <input type="url" class="edit-input" pattern="https://.*" name="img" value="<%=architecture.img%>" placeholder="https://www.copy-image-address.com/">
+        <br>
+        <input type="text" class="edit-input" name="loc.streetAddress" value="<%=architecture.loc.streetAddress%>" placeholder="Street address">
+        <br>
+        <input type="text" class="edit-input" name="loc.city" value="<%=architecture.loc.city%>" placeholder="City">
+        <br>
+        <input type="text" class="edit-input" name="loc.state" placeholder="State" value="<%=architecture.loc.state%>">
+        <br>
+        <input type="text" class="edit-input" name="loc.postalCode" value="<%=architecture.loc.postalCode%>" placeholder="Postcode">
+        <br>
+        <input type="text" class="edit-input" name="loc.country" value="<%=architecture.loc.country%>" placeholder="Country">
+        <br>
+        <input type="url" class="edit-input" name="link" value="<%=architecture.link%>" placeholder="http://www.architecture-site.com">
+        <br>
+        <input type="number" class="edit-input" name="visits" value="<%=architecture.visits%>" placeholder="Number of times visited">
+        <br>
+        <input type="submit" class="edit-submit" value="Submit">
+      </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

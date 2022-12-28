@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Architecture index</title> -->
+<%- include ('./partials/head.ejs') %>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <%- include ('./partials/header.ejs') %>
+      <div>
+        <button class="nav-button"><a class="text" href="/architecture">Back</a></button>
+      </div>
+    </header>
+    <div class="new-container">
+      <ul>
+        <li>
+          <h1>Add New Architecture</h1>
+          <br>
+    <form action="/architecture" method="POST">
+      <label for="dayTag">Day visit</label><br>
+        <span style='font-size: 48px;'>☀</span><br>
+        <br>
+      <label for="dayTag">Overnight stay</label><br>
+        <span style='font-size: 48px;'>🛏</span><br>
+        <br>
+          <input class="edit-input" type="text" name="dayTag" placeholder="Paste day visit emoji here">
+          <br>
+          <input class="edit-input" type="text" name="nightTag" placeholder="Paste overnight stay emoji here">
+          <br>
+          <input class="edit-input" type="text" name="title" placeholder="Name of building or site"required>
+          <br>
+          <input class="edit-input" type="text" name="architectOne" placeholder="Name of Architect"required>
+          <br>
+          <input type="text" class="edit-input" name="architectTwo" placeholder="Add Another Architect">
+          <br>
+          <input type="text" class="edit-input" name="year" placeholder="Year" required>
+          <br>
+          <input type="url" class="edit-input" pattern="https://.*" name="img" placeholder="https://www.copy-image-address.com/" required>
+          <br>
+          <input type="text" class="edit-input" name="loc.streetAddress" placeholder="Street address" required>
+          <br>
+          <input type="text" class="edit-input" name="loc.city" placeholder="City" required>
+          <br>
+          <input type="text" class="edit-input" name="loc.state" placeholder="State">
+          <br>
+          <input type="text" class="edit-input" name="loc.postalCode" placeholder="Postcode" required>
+          <br>
+          <input type="text" class="edit-input" name="loc.country" placeholder="Country" required>
+          <br>
+          <input type="url" class="edit-input" name="link" placeholder="http://www.architecture-site.com">
+          <br>
+          <input type="number" class="edit-input" name="visits" placeholder="Number of times visited">
+          <br>
+          <input type="submit" class="edit-submit" value="Submit">
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

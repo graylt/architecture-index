@@ -1,0 +1,292 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Syne', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header header header header header"
+  "footer footer footer footer footer footer footer footer"; 
+  gap: 24px;
+
+}
+
+/* h1 {
+} */
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+/* MAIN NAV / HEADER */
+
+header {
+  display: grid;
+  grid-area: header;
+}
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  grid-row: 1;
+  position: sticky;
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.nav-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin: 24px;
+  align-content: space-around;
+  justify-content: center;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  margin: 0;
+}
+
+.visit-container {
+  margin-left: 32px;
+}
+
+.new-button {
+  background-color:rgb(234, 250, 131);
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 32px;
+  height: 56px;
+  width: 56px;
+  align-content: center;
+  cursor: crosshair;
+}
+
+.new-button:hover {
+  transform: scale(1.5);
+}
+
+/* CONTENT GRID */
+
+.content-container {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1 / span 8;
+  /* flex-direction: row; */
+  margin-top: 32px;
+  /* flex-wrap: wrap; */
+}
+
+.edit-content {
+  padding-right: 24px;
+}
+
+.edit-button {
+  font-family: 'Syne', sans-serif;
+  background-color: none;
+  background: none;
+  border: none;
+  align-self: center;
+}
+
+form {
+  display: inline;
+}
+
+.architecture {
+  display: grid;
+  flex-direction: row;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 1fr;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: crosshair;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: none;
+  cursor: crosshair;
+  padding-left: 0;
+  color: rgb(78, 78, 78);
+}
+
+.delete-button:hover {
+  color: red;
+  transform: scale(1.5);
+}
+
+.edit-anchor {
+  padding: 0;
+  justify-content: center;
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+  background: none;
+  border: none;
+  cursor: crosshair;
+}
+
+.edit-anchor:hover {
+  transform: scale(1.5);
+}
+
+
+/* SHOW PAGE */
+
+.nav-button {
+  background: none;
+  border: none;
+  margin-left: 32px;
+}
+
+.text {
+  font-size: 56px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+.edit-show {
+  padding: 0;
+  justify-content: center;
+  font-size: 32px;
+  color: rgb(78, 78, 78);
+  background: none;
+  border: none;
+  cursor: crosshair;
+}
+
+.edit-show:hover {
+  transform: scale(1.5);
+}
+
+.show-container {
+  grid-column: 1 / span 3;
+  margin-top: 24px;
+}
+
+.show-list {
+  line-height: 16px;
+}
+
+.tags {
+  display: inline;
+  margin-left: 32px;  
+}
+
+.show-img-large {
+  /* grid-column: 5; */
+  width: 800px;
+  height: 800px;
+}
+
+.show-img-container {
+  grid-column: 4 / span 6;
+
+}
+
+/* EDIT PAGE */
+.edit-container {
+  margin-top: 32px;
+  display: grid;
+  grid-column: 1 / span 3;
+  margin-top: 0;
+}
+
+.edit-input {
+  background-color: rgb(246, 255, 185);
+  width: 500px;
+  height: 48px;
+  border: none;
+  margin-bottom: 24px;
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.edit-submit {
+  background-color: none;
+  background: none;
+  border: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  cursor: crosshair;
+}
+/* 
+.tags {
+  display: block;
+  align-items: center;
+} */
+
+.holder_default {
+  width:500px; 
+  height:150px; 
+  border: 3px dashed #ccc;
+}
+
+#holder.hover { 
+  width:400px; 
+  height:150px; 
+  border: 3px dashed #0c0 !important; 
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
