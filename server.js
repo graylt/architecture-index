@@ -27,7 +27,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Connect to Mongo &
 // Fix Depreciation Warnings from Mongoose
 // May or may not need these depending on your Mongoose version
-mongoose.set('strictQuery',true);
+// mongoose.set('strictQuery',true);
 mongoose.connect(MONGODB_URI, () => {
     console.log('connected to mongo')
 });
