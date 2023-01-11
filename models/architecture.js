@@ -13,7 +13,7 @@ module.exports = [
             country: "France"
         },
         link: "foundationlecorbusier.fr",
-        dayTag: "☀", 
+        dayTag: true, 
         visits: 1
     },
     {
@@ -28,8 +28,8 @@ module.exports = [
             country: "France"
         },
         link: "couventdelatourette.fr",
-        dayTag: "☀",
-        nightTag: "🛏"
+        dayTag: true,
+        nightTag: true
     },
     {
         title: "E-1027 & Le Cabanon",
@@ -44,8 +44,8 @@ module.exports = [
             country: "France"
         },
         link: "capmoderne.com",
-        dayTag: "☀",
-        nightTag: "🛏"
+        dayTag: true,
+        nightTag: true
     },
     {
         title: "Les Arcs",
@@ -59,7 +59,7 @@ module.exports = [
             country: "France"
         },
         link: "lesarcs.com",
-        nightTag: "🛏"
+        nightTag: true
     },
     {
         title: "Villa Necchi Campiglio",
@@ -73,7 +73,7 @@ module.exports = [
             country: "Italy"
         },
         link: "fondoambiente.it",
-        dayTag: "☀"
+        dayTag: true
     },
     {
         title: "Finn Juhl House",
@@ -87,6 +87,6 @@ module.exports = [
             country: "Denmark"
         },
         link: "ordrupgaard.dk",
-        dayTag: "☀"
+        dayTag: true
     }
     ]

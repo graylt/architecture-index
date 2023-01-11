@@ -113,14 +113,15 @@ app.get ('/', (req, res) => {
 
 //route for localhost
 app.get('/architecture', (req, res)=>{
-    Schema.find({}, (err, foundArchitecture) => {
-        // let numOfVisits = 0;
-        // for (let item of foundArchitecture) {
-        //     numOfVisits += item.visits
-        // }
+    Schema.find({}, (err, allArchitecture) => {
+        let numOfVisits = 0;
+        for (let item of allArchitecture) {
+            numOfVisits += item.visits
+            // console.log(numOfVisits)
+        }
         res.render('index.ejs', {
-            architecture: foundArchitecture,
-            // numOfVisits: numOfVisits,
+            numOfVisits: numOfVisits,
+            architecture: allArchitecture,
             tabTitle: 'Home'
             // res.send('index.ejs');
         });

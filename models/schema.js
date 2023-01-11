@@ -11,8 +11,8 @@ const architectureSchema = new Schema ({
     img: [{type: String}],
     loc: {streetAddress: String, city: String, state: String, postalCode: String, country: String},
     link: {type: String},
-    dayTag: {type: String},
-    nightTag: {type: String},
+    dayTag: {type: Boolean},
+    nightTag: {type: Boolean},
     visits: {type: Number}
 })
 
