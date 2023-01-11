@@ -21,15 +21,18 @@
           <h1>Edit Architecture</h1>
           <br>
         <form  action="/architecture/<%=architecture._id%>?_method=PUT" method="POST">
-        <label>Day visit</label><br>
-        <span style='font-size: 48px;'>☀</span><br>
+        <label>Day visit</label>
+        <br>
+        <!-- <span style='font-size: 48px;'>☀</span><br> -->
+        <br>
+        <% let check = architecture.dayTag ? 'checked' : '' %>
+        <input type="checkbox" class="edit-input" name="dayTag" value="<%=architecture.dayTag%>"<%=check%>>
         <br>
         <label>Overnight stay</label><br>
-        <span style='font-size: 48px;'>🛏</span><br>
+        <!-- <span style='font-size: 48px;'>🛏</span><br> -->
         <br>
-        <input type="checkbox" class="edit-input" name="dayTag" value="<%=architecture.dayTag%>" placeholder="Paste day visit emoji here">
-        <br>
-        <input type="checkbox" class="edit-input" name="nightTag" value="<%=architecture.nightTag%>" placeholder="Paste overnight stay emoji here">
+        <% let check2 = architecture.nightTag ? 'checked' : '' %>
+        <input type="checkbox" class="edit-input" name="nightTag" value="<%=architecture.nightTag ? "checked" : "" %>" <%=check2%>>
         <br>
         <input type="text" class="edit-input" name="title" value="<%=architecture.title%>" placeholder="Name of building or site">
         <br>
