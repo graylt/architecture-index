@@ -18,32 +18,35 @@
   </header>
   <div class="show-container">
     <div class="tags">
-      <span style='font-size: 48px; padding-right: 16px'><%=architecture.dayTag === true ? 'Day' : ''%></span>
-    <span style='font-size: 48px;'><%=architecture.nightTag === true ? 'Overnight' : ''%></span>
+      <span style='font-size: 32px;'><%=architecture.dayTag === true ? 'Day' : ''%></span>
+    <span style='font-size: 32px;'><%=architecture.nightTag === true ? 'Overnight' : ''%></span>
     </div>
-
-
     <ul class="show-list">
       <li>
-      <h1> <%=architecture.title%></h1>
-      <br>
+      <h2> <%=architecture.title%></h1>
       <p>Architect</p>
-        <h1><%=architecture.architectOne%></h1>
+        <h2><%=architecture.architectOne%></h1>
       <p>And...</p>
-        <h1><%=architecture.architectTwo%></h1>
+        <h2><%=architecture.architectTwo%></h1>
       <p>Year</p>
-        <h1><%=architecture.year%></h1>
+        <h2><%=architecture.year%></h1>
         <p>Location
           <br>
+          <span style='font-weight: 800;'>
           <%=architecture.loc.streetAddress%>
           <br>
           <%=architecture.loc.city%>
           <%=architecture.loc.postalCode%>
           <br>
           <%=architecture.loc.country%>
+          </span>
         </p>
-          <label>Visits:</label>
+        <br>
+          <p>Visits</p>
+          <span style='font-weight: 800;'>
           <p><%=architecture.visits%></p>
+        </span>
+        <br>
           <p><%=architecture.link%></p>
           <br>
           <div class="show-edit-container">

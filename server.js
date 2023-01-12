@@ -32,7 +32,6 @@ mongoose.connect(MONGODB_URI, () => {
     console.log('connected to mongo')
 });
 
-
 //___________________
 //Middleware
 //___________________
@@ -40,11 +39,8 @@ mongoose.connect(MONGODB_URI, () => {
 //use public folder for static assets
 app.use(express.static('public'));
 
-// app.use('/images', express.static('images'));
-// app.use('/grid.png', express.static('../images/grid.png'));
-
-
-
+app.use('/images', express.static('images'));
+app.use('/grid.png', express.static('../images/grid.png'));
 
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
 app.use(express.urlencoded({ extended: true }));// extended: false - does not allow nested objects in query strings
@@ -52,7 +48,6 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
-
 
 //___________________
 // Routes
