@@ -19,28 +19,42 @@
   /* @media screen and (min-width: 400px) and (max-width: 1000px){ */
   @media screen and (max-width: 600px){
     :root, body {
-      background: grey;
+      /* background: rgb(181, 181, 181); */
       font-size: 2vw;
+      
+    }
+  }
+  @media screen and (max-width: 600px){
+  .nav-link, .new-button {
+    display: block;
+    text-align: center;
+    width: 100%; 
+    /* display: none; */
+    /* Adjust the following values, it's just
+     * going to be trial and error: */
+    /* padding: 0.25rem 0.35rem; */
+    /* font-size: calc(1rem + 1vw); */
       
     }
   }
 
   @media screen and (min-width: 768px){
     :root, body{
-      /* background: blue; */
+      background: blue;
       font-size: 16px;
     }
   }
-/* 
-  @media screen and (min-width: 600px){
-    .show-img-large{
-      grid-column: 1;
-      grid-row: 3;
+
+  /* @media screen and (min-width: 600px){
+    .show-img-large{ */
+      /* grid-column: 1;
+      grid-row: 3; */
 
  
-    }
-  }
-  @media screen and (max-width: 600px){
+    /* }
+  } */
+
+  /* @media screen and (max-width: 600px){
     .show-img-container{
       grid-column: 1;
       grid-row: 3;
@@ -50,6 +64,7 @@
 
   @media screen and (min-width: 1024px) {
     body {
+      background: red;
       font-size: 16px;
     }
   }
@@ -126,31 +141,53 @@ p {
 header {
   display: grid;
   grid-area: header;
-}
-
-.nav-bar-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  grid-row: 1;
-  position: sticky;
-  height: 24px;
   margin-bottom: 24px;
 }
 
+.title {
+  /* grid-column: 1; */
+  justify-content: left;
+  margin-left: 32px;
+  margin-bottom: 24px;
+}
+
+.title-container {
+  justify-content: center;
+}
+
+.nav-bar-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: end; */
+  grid-row: 1;
+  grid-column: 1 / span 6;
+  position: sticky;
+  height: 100px;
+  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  /* align-content: center; */
+}
+
 .nav-link-wrapper {
+  background-color: black;
+  width: 100%;
   display: flex;
   flex-direction: row;
   float: right;
-  margin: 24px;
+  /* align-content: center; */
+  /* margin: 24px; */
   align-content: space-around;
-  justify-content: center;
+  /* justify-content: center; */
 }
-.nav-link {
+.nav-link{
   display: flex;
-  justify-content: center;
+  grid-column: 5;
   padding: 16px;
   margin: 0;
+  margin-top: 4px;
+  margin-right: 16px;
 }
 
 .visit-container {
@@ -162,6 +199,7 @@ header {
   font-family: 'Syne', sans-serif;
   font-weight: 400;
   border: none;
+  justify-content: end;
   border-radius: 32px;
   height: 56px;
   width: 56px;
