@@ -40,7 +40,7 @@
 
   @media screen and (min-width: 768px){
     :root, body{
-      background: blue;
+      /* background: blue; */
       font-size: 16px;
     }
   }
@@ -64,7 +64,7 @@
 
   @media screen and (min-width: 1024px) {
     body {
-      background: red;
+      /* background: red; */
       font-size: 16px;
     }
   }
@@ -147,8 +147,9 @@ header {
 .title {
   /* grid-column: 1; */
   justify-content: left;
-  margin-left: 32px;
+  margin-left: 24px;
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .title-container {
@@ -159,35 +160,36 @@ header {
   background-color: black;
   color: white;
   display: flex;
-  flex-direction: row;
+  grid-row: auto;
+  /* flex-direction: row; */
   /* justify-content: end; */
-  grid-row: 1;
-  grid-column: 1 / span 6;
-  position: sticky;
-  height: 100px;
+  /* grid-row: auto; */
+  /* grid-column: 1; */
+  /* position: sticky; */
+  height: auto;
   margin-bottom: 24px;
+  /* width: 100%; */
   /* margin-bottom: 24px; */
   /* align-content: center; */
 }
 
 .nav-link-wrapper {
-  background-color: black;
   width: 100%;
   display: flex;
   flex-direction: row;
   float: right;
   /* align-content: center; */
   /* margin: 24px; */
-  align-content: space-around;
+  /* align-content: space-around; */
   /* justify-content: center; */
 }
 .nav-link{
   display: flex;
-  grid-column: 5;
+  /* grid-column: 6; */
   padding: 16px;
-  margin: 0;
-  margin-top: 4px;
-  margin-right: 16px;
+  /* margin: 0; */
+  margin-top: 24px;
+  justify-content: end;
 }
 
 .visit-container {
@@ -203,8 +205,8 @@ header {
   border-radius: 32px;
   height: 56px;
   width: 56px;
-  align-content: center;
   cursor: crosshair;
+  margin-right: 16px;
 }
 
 .new-button:hover {
@@ -326,7 +328,7 @@ a {
 }
 
 .show-container {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
   margin-top: 24px;
   margin-left: 32px;
 }
@@ -340,14 +342,15 @@ a {
   display: inline;  
 }
 
-.show-img-large {
-  /* grid-column: 5; */
-  width: 800px;
-  height: 800px;
-}
+/* .show-img-large { */
+  /* grid-row: 1; */
+  /* grid-column:  4 / span 5; */
+  /* width: 800px;
+  height: 800px; */
+/* } */
 
 .show-img-container {
-  grid-column: 4 / span 6;
+  grid-column: 3 / span 4;
   margin-right: 32px;
 
 }
@@ -356,7 +359,7 @@ a {
 .edit-container {
   margin-top: 32px;
   display: grid;
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 6;
   margin-top: 0;
 }
 
