@@ -17,20 +17,47 @@
       </div>
   </header>
   <div class="show-container">
-    <div class="tags">
-      <span style='font-size: 32px;'><%=architecture.dayTag === true ? 'Day' : ''%></span>
-    <span style='font-size: 32px;'><%=architecture.nightTag === true ? 'Overnight' : ''%></span>
-    </div>
+   
     <ul class="show-list">
       <li>
-      <h2> <%=architecture.title%></h1>
-      <p>Architect</p>
-        <h2><%=architecture.architectOne%></h1>
-      <p>And...</p>
-        <h2><%=architecture.architectTwo%></h1>
-      <p>Year</p>
-        <h2><%=architecture.year%></h1>
-        <p>Location
+        <p>Type</p>
+        <div class="tags">
+          <span style='font-size: 16px;'>
+            <%=architecture.dayTag === true ? 'Day' : ''%>
+          </span>
+            <span style='font-size: 16px;'><%=architecture.nightTag === true ? 'Overnight' : ''%>
+              </span>
+        </div>
+        <p>
+          <br>
+          Title
+        </p>
+        <h2>
+        <%=architecture.title%>
+      </h1>
+      <p>
+        <br>
+        Architect
+      </p>
+        <h2>
+          <%=architecture.architectOne%>
+        </h1>
+      <p>
+        And...
+      </p>
+        <h2>
+          <%=architecture.architectTwo%>
+        </h1>
+        <br>
+      <p>
+        Year
+      </p>
+        <h2>
+          <%=architecture.year%>
+        </h1>
+        <br>
+        <p>
+          Location
           <br>
           <span style='font-weight: 800;'>
           <%=architecture.loc.streetAddress%>

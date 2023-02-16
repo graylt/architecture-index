@@ -14,19 +14,32 @@
         <%- include ('./partials/header.ejs') %>     
         <div class="visit-container">
             <!-- <h1>Architecture Index</h1> -->
-            <h3>Architectural sites visited: <%= numOfVisits%></h3>
+            <p>Architectural sites visited: <%= numOfVisits%></p>
         </div> 
     </header>
     <div class="content-container">
-        <h1><%=architecture.title%></h1>
-        <ul>
+            <!-- <li> -->
+        
+        <!-- <ul> -->
           <% for (let i = 0; i < architecture.length; i++){ %>
-            <div class="<%=architecture[i]._id%> architecture">
-        <li>
-            <a href="/architecture/<%=architecture[i]._id%>"><img src="<%=architecture[i].img%>" (min-width: 992px) 50vw, 100vw></a>
-                <h3><a href="/architecture/<%=architecture[i]._id%>"><%=architecture[i].title%></a></h3>
-                        <h2><a href="/architecture/<%=architecture[i]._id%>"><%=architecture[i].architectOne%></a></h2>         
-            <form class="edit-content" action="/architecture/<%=architecture[i]._id%>?_method=DELETE"  method="POST">
+            <div id="index-container" class="<%=architecture[i]._id%> architecture">
+        <!-- <li> -->
+            <!-- <li> -->
+                <a href="/architecture/<%=architecture[i]._id%>">
+                    <img src="<%=architecture[i].img%>" (min-width: 992px) 50vw, 100vw>
+                </a>
+                <br>
+            <!-- </li> -->
+                <h3 class="index-title">
+                    <a href="/architecture/<%=architecture[i]._id%>"><%=architecture[i].title%>
+                    </a>
+                </h3>
+                        <h2>
+                            <a href="/architecture/<%=architecture[i]._id%>"><%=architecture[i].architectOne%>
+                            </a>
+                        </h2>       
+            <li class="edit-delete-list">
+                <form class="edit-content" action="/architecture/<%=architecture[i]._id%>?_method=DELETE"  method="POST">
             <!-- <input type="submit"  value="Delete"> -->
                 <button class="delete-button" style="font-size:16px;">&#10005;</button>
             </form>
@@ -34,9 +47,10 @@
                 <button class="edit-anchor">&#9998;</button>
             </form>
         </li>
+        <!-- </li> -->
             </div>
                 <%}%>
-        </ul>
+        <!-- </ul> -->
         </div>
     </body>
 </html>
