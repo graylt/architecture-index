@@ -24,6 +24,14 @@
     }
   }
 
+  /* @media screen and (max-width: 600px){
+    .form {
+      width: 100%;
+      margin-top: 0;
+      
+    }
+  } */
+
   @media screen and (max-width: 600px){
   .nav-link, .new-button {
     display: block;
@@ -70,6 +78,16 @@
     }
   }
 
+  /* @media screen and (max-width: 600px) {
+    .new-container, input[type=submit] {
+      display: block;
+      width: 100%;
+      margin-top: 0;
+    }
+  } */
+
+
+
   /* @media (orientation: landscape) {
     body{
       flex-direction: row;
@@ -107,8 +125,6 @@ body {
   "header header header header header header"
   "content content content content content content"
   "footer footer footer footer footer footer"; 
-  /* "header header header header header header header header"
-  "footer footer footer footer footer footer footer footer";  */
   gap: 24px;
 
 }
@@ -211,6 +227,15 @@ header {
 
 .new-button:hover {
   transform: scale(1.5);
+}
+
+.new-background {
+  background-color: rgb(98, 125, 198);
+}
+
+.new-container {
+  grid-column: 1 / span 6;
+
 }
 
 /* CONTENT GRID */
@@ -376,6 +401,10 @@ a {
 }
 
 /* EDIT PAGE */
+
+.edit-background {
+  background-color: rgb(246, 114, 69);
+}
 .edit-container {
   margin-top: 32px;
   display: grid;
@@ -384,23 +413,40 @@ a {
 }
 
 .edit-input {
-  background-color: rgb(246, 255, 185);
-  width: 500px;
-  height: 48px;
+  /* background-color: rgb(246, 255, 185); */
+  /* width: 500px; */
+  height: 32px;
   border: none;
   margin-bottom: 24px;
   font-family: 'Syne', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   color: rgb(0, 0, 0);
+  padding: 12px 20px;
 }
+
+input[type=checkbox] {
+  accent-color: rgb(0, 0, 0);
+  -webkit-box-flex: 0;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	margin-right: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+/* label, input {
+  vertical-align: top;
+} */
 
 .edit-submit {
   background-color: none;
   background: none;
-  border: none;
+  border: 1px solid black;
   font-family: 'Syne', sans-serif;
-  font-size: 48px;
+  font-size: 24px;
+  line-height: 200%;
   font-weight: 700;
   cursor: crosshair;
 }

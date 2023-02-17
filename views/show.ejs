@@ -25,7 +25,8 @@
           <span style='font-size: 1.25vw;font-weight: 800;'>
             <%=architecture.dayTag === true ? 'Day' : ''%>
           </span>
-            <span style='font-size: 1.25vw; font-weight: 800;'><%=architecture.nightTag === true ? 'Overnight' : ''%>
+            <span style='font-size: 1.25vw; font-weight: 800;'>
+              <%=architecture.nightTag === true ? 'Overnight' : ''%>
               </span>
         </div>
         <p>
@@ -77,13 +78,17 @@
           <p><%=architecture.link%></p>
           <br>
           <div class="show-edit-container">
-            <button type="button" class="edit-show"><a href="/architecture/<%=architecture._id%>/edit">&#9998;</a></button>
+            <button type="button" class="edit-show">
+              <a href="/architecture/<%=architecture._id%>/edit">&#9998;</a>
+            </button>
           </div>
       </li>
     </ul>
     </div>
     <div class="show-img-container">
-      <span><img class="show-img-large" src=" <%=architecture.img%>" style= "width: 100%; height: auto;" class="responsive"></span>
+      <span>
+        <img class="show-img-large" src=" <%=architecture.img%>" style= "width: 100%; height: auto;" class="responsive">
+      </span>
     </div>
   </div>
 </body>
