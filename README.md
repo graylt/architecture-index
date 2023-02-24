@@ -14,17 +14,18 @@ Full Stack Responsive Web Application for travel and archiving architecture arou
 ## *Extra*
 
 - [x] EJS Partials
-- [x] Number of sites visited
+- [x] Visit counter
 
 ### Wireframes
 
-! (public/images/arch_index_wireframes.png)
+![this is an image](public/images/arch_index_wireframes.png)
 
 ### Next steps:
 
 - [ ] Map
 - [ ] User authentication
 - [ ] Notes
+- [ ] Search
 
 
 
