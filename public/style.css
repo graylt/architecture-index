@@ -12,25 +12,17 @@
     display: block;
     margin: 0 auto;
   }
+
   :root {
     font-size: 24px; /* default below 600px */
   }
 
-  /* @media screen and (min-width: 400px) and (max-width: 1000px){ */
   @media screen and (min-width: 600px){
     :root, body {
       font-size: 3vw;
       
     }
   }
-
-  /* @media screen and (max-width: 600px){
-    .form {
-      width: 100%;
-      margin-top: 0;
-      
-    }
-  } */
 
   @media screen and (max-width: 600px){
   .nav-link, .new-button {
@@ -46,30 +38,12 @@
     }
   }
 
-
   @media screen and (min-width: 768px){
     :root, body{
       /* background: blue; */
       font-size: 16px;
     }
   }
-
-  /* @media screen and (min-width: 600px){
-    .show-img-large{ */
-      /* grid-column: 1;
-      grid-row: 3; */
-
- 
-    /* }
-  } */
-
-  /* @media screen and (max-width: 600px){
-    .show-img-container{
-      grid-column: 1;
-      grid-row: 3;
- 
-    }
-  } */
 
   @media screen and (min-width: 1024px) {
     body {
@@ -78,31 +52,6 @@
     }
   }
 
-  /* @media screen and (max-width: 600px) {
-    .new-container, input[type=submit] {
-      display: block;
-      width: 100%;
-      margin-top: 0;
-    }
-  } */
-
-
-
-  /* @media (orientation: landscape) {
-    body{
-      flex-direction: row;
-    }
-  }
-
-  @media (orientation: portrait) {
-    body{
-      flex-direction: column;
-    }
-  } */
-
-
-  
-  
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
@@ -436,10 +385,6 @@ input[type=checkbox] {
   width: 24px;
 }
 
-/* label, input {
-  vertical-align: top;
-} */
-
 .edit-submit {
   background-color: none;
   background: none;
@@ -450,11 +395,6 @@ input[type=checkbox] {
   font-weight: 700;
   cursor: crosshair;
 }
-/* 
-.tags {
-  display: block;
-  align-items: center;
-} */
 
 .holder_default {
   width:500px; 
