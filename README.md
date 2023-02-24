@@ -22,9 +22,9 @@ Full Stack Responsive Web Application for travel and archiving architecture arou
 
 ### Next steps:
 
-- [] Map
-- [] User authentication
-- [] Notes
+- [ ] Map
+- [ ] User authentication
+- [ ] Notes
 
 
 
