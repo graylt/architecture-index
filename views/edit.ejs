@@ -24,14 +24,15 @@
         <!-- <span style='font-size: 48px;'>☀</span><br> -->
         <br>
         <% let check = architecture.dayTag ? 'checked' : '' %>
-        <input type="checkbox" class="edit-input" name="dayTag" value="<%=architecture.dayTag%>"<%=check%>>
+        <input type="checkbox" class="edit-input" name="dayTag" value="<%=architecture.dayTag ? "checked" : "" %>"<%=check%> >
         Day visit</label>
         <label style='font-size: 2.25vw;font-weight: 400;'>
         <!-- <span style='font-size: 48px;'>🛏</span><br> -->
         <br>
         <% let check2 = architecture.nightTag ? 'checked' : '' %>
-        <input type="checkbox" class="edit-input" name="nightTag" value="<%=architecture.nightTag ? "checked" : "" %>" <%=check2%>>
-        Overnight stay</label><br>
+        <input type="checkbox" class="edit-input" name="nightTag" value="<%=architecture.nightTag ? "checked" : "" %>" <%=check2%> >
+        Overnight stay</label>
+        <br>
         <br>
         <input style='width:100%;' type="text" class="edit-input" name="title" value="<%=architecture.title%>" placeholder="Name of building or site">
         <br>
@@ -65,3 +66,4 @@
   </div>
 </body>
 </html>
+
