@@ -87,13 +87,13 @@ app.put('/architecture/:id', (req,res) => {
 
  // 4. post
  app.post('/architecture', (req,res) => {
-  let checked = req.body.checked
+//   let checked = req.body.checked
 
-  if (checked == "true") {
-      console.log("true");
-} else {
-      console.log("false");
-  }
+//   if (checked == "true") {
+//       console.log("true");
+// } else {
+//       console.log("false");
+//   }
     Schema.create(req.body, (err, createdSchema) => {
       res.redirect('/architecture')
     })
