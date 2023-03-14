@@ -14,7 +14,7 @@
   }
 
   :root {
-    font-size: 24px; /* default below 600px */
+    font-size: 32px; /* default below 600px */
   }
 
   @media screen and (min-width: 600px){
@@ -78,6 +78,10 @@ body {
 
 }
 
+.visit-color-container {
+  display: inline-block;
+  background-color: rgb(197, 197, 197);
+}
 h1 {
   font-size: 80px;
 	/* font-size: 10rem; */
@@ -86,12 +90,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25vw;
+  font-size: .95vw;
   line-height: 175%;
 }
 
 h3 {
-  font-size: 1vw;
+  font-size: .99vw;
   line-height: 175%;
 }
 
